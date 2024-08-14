@@ -5,11 +5,12 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import scala.annotation.targetName
 
-@Mixin(MinecraftClient.class)
-public class ExampleClientMixin {
-	@Inject(at = @At("HEAD"), method = "run")
-	private void init(CallbackInfo info) {
-		// This code is injected into the start of MinecraftClient.run()V
-	}
+@Mixin(Array(classOf[MinecraftClient]))
+class ExampleClientMixin {
+    @Inject(at = Array(new At(value = "HEAD")), method = Array("run"))
+    def init(info: CallbackInfo) = {
+        // This code is injected into the start of MinecraftClient.run()V
+    }
 }
