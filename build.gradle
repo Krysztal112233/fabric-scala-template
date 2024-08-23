@@ -20,10 +20,9 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	maven {
-		name "dragonsPlusMavenReleases"
-		url "https://maven.dragons.plus/releases"
-	}
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 loom {
@@ -48,7 +47,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Fabric Language Scala
-	modImplementation "dev.krysztal:krysztal-language-scala:${kls_version}+scala.${scala_version}"
+	modImplementation "maven.modrinth:krysztal-language-scala:${project.kls_version}+scala.${project.scala_version}"
 }
 
 processResources {
