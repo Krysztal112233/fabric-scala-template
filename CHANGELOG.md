@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## Unreleased
 
+### Changed
+
+- Changed `kls` version to **_3.1.0+scala.3.5.0_**
+
 ## 1.21.1 - 2024-08-15
 
 ### Added
@@ -14,4 +18,3 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 
 - Changed original code to Scala3
-- Changed `kls` from `DragonPlus` maven to `Modrinth` maven

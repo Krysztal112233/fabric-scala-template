@@ -21,7 +21,7 @@ repositories {
 	// for more information about repositories.
 
     maven {
-        url = "https://api.modrinth.com/maven"
+        url = "https://maven.dragons.plus/releases"
     }
 }
 
@@ -47,7 +47,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Fabric Language Scala
-	modImplementation "maven.modrinth:krysztal-language-scala:${project.kls_version}+scala.${project.scala_version}"
+	modImplementation "dev.krysztal:krysztal-language-scala:${project.kls_version}+scala.${project.scala_version}"
 }
 
 processResources {
